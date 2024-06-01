@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+								initial-scale=1.0"
+    />
+    <title>Interactive Quiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="from-gray-100 via-gray-400 to-gray-500 p-10">
+    <div
+      class="max-w-md mx-auto bg-white p-8 rounded-md shadow-md"
+      style="border: 1px solid black"
+    >
+      <h3 class="text-2xl font-bold mb-6 text-center">Coding Quiz</h3>
+      <form id="quizForm" class="space-y-4">
+        <div class="flex flex-col">
+          <label for="q1" id="question" class="text-lg text-gray-800 mb-2">
+            quiz Question
+          </label>
+          <div class="flex items-center space-x-4">
+            <input type="radio" id="a" name="option" class="answer mr-2" />
+            <label for="a" id="option_1" class="text-gray-700">
+              quiz Option
+            </label>
+          </div>
+          <div class="flex items-center space-x-4">
+            <input type="radio" id="b" name="option" class="answer mr-2" />
+            <label for="b" id="option_2" class="text-gray-700">
+              quiz Option
+            </label>
+          </div>
+          <div class="flex items-center space-x-4">
+            <input type="radio" id="c" name="option" class="answer mr-2" />
+            <label for="c" id="option_3" class="text-gray-700">
+              quiz Option
+            </label>
+          </div>
+          <div class="flex items-center space-x-4">
+            <input type="radio" id="d" name="option" class="answer mr-2" />
+            <label for="d" id="option_4" class="text-gray-700">
+              quiz Option
+            </label>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="submit"
+          class="bg-green-500 text-white px-4 py-2 rounded-md mt-8"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
